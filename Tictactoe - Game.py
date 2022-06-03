@@ -16,6 +16,24 @@ Publishing the game
 - Imbed onto website
 - store the Bins
 - Visualisations
+
+HTML for the website - CSS for style.
+Javascript for the game (Or convert from python...I think)
+Needs to get the move from somewhere -
+
+Host the data somewhere (A database?, its small so can I use like...sharepoint or something?)
+Python to receive the input from the website, read the move, access the data, calculate next move, send it back.
+
+Is there an intermediate that needs to access the python code?
+How do I host my python code?
+
+MySQL
+
+HTML
+Bootstrap - library does the nice stuff for html
+HTTP requests - done in Javascript or HTML form
+Python anywhere or Heroku
+
 """
 
 #%% imports
@@ -26,7 +44,7 @@ import re
 #define the board. Ill do it as a 3x3 array. Set to empty. 0 is empty, 1 is X and 0 and O.
 #Also using the notation 1-9, from top to bottom, left to right.
 def setup_board():
-    board = np.array([['X',' ','O'], ['X',' ',' '], [' ',' ','O']])
+    board = np.array([[' ',' ',' '], [' ',' ',' '], [' ',' ',' ']])
     return board
 
 #%% Setup player start
